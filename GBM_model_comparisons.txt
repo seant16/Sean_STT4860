@@ -1,0 +1,62 @@
+GBM analysis using Linear Model Approach
+
+
+******************************************
+# No-Grouping (our initial analysis)
+
+             regression     MSPE selected
+1             lasso gcv 1.248901       75
+2             lasso aic 2.225451      399
+3             lasso bic 1.288480       20
+4            lasso ebic 1.289009       19
+5        adap lasso gcv 1.387954       96
+6        adap lasso aic 1.658202      188
+7        adap lasso bic 1.589102        9
+8       adap lasso ebic 1.589102        9
+9              SCAD gcv 3.376527      168
+10             SCAD aic 3.376527      168
+11             SCAD bic 3.376527      168
+12            SCAD ebic 1.300935        0
+13              MCP gcv 3.968848      171
+14              MCP aic 3.968848      171
+15              MCP bic 3.968848      171
+16             MCP ebic 1.300935        0
+17      lasso cv.glmnet 1.234318       26
+18 adap lasso cv.glmnet 1.365610       93
+19       SCAD cv.ncvreg 1.191302       30
+20        MCP cv.ncvreg 1.188926       13
+******************************************
+# Model with minimum MSPE
+
+      regression     MSPE selected
+20 MCP cv.ncvreg 1.188926       13
+
+
+
+
+******************************************
+# Group regression with K = 30 groups
+         model   tune selected     MSPE
+1  Group Lasso autoCV       37 1.166352
+2  Group Lasso    GCV       37 1.172220
+3  Group Lasso    AIC      222 1.975450
+4  Group Lasso    BIC        0 1.300935
+5  Group Lasso   EBIC        0 1.300935
+6   Group SCAD autoCV       16 1.228483
+7   Group SCAD    GCV       37 1.212597
+8   Group SCAD    AIC       37 1.212597
+9   Group SCAD    BIC        0 1.300935
+10  Group SCAD   EBIC        0 1.300935
+11   Group MCP autoCV       16 1.228483
+12   Group MCP    GCV       37 1.212597
+13   Group MCP    AIC       37 1.212597
+14   Group MCP    BIC        0 1.300935
+15   Group MCP   EBIC        0 1.300935
+******************************************
+# Model with minium MSPE and best model 
+
+        model   tune selected     MSPE
+1 Group Lasso autoCV       37 1.166352
+
+
+
