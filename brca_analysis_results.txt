@@ -1,0 +1,350 @@
+brca analysis (ungrouped)
+             regression      MSPE selected
+1             lasso gcv 1.2725736       86
+2             lasso aic 1.2725736       86
+3             lasso bic 1.2725736       86
+4            lasso ebic 1.1913337       10
+5        adap lasso gcv 1.1626270       48
+6        adap lasso aic 1.2721134       70
+7        adap lasso bic 1.2721134       70
+8       adap lasso ebic 1.3661992        8
+9              SCAD gcv 1.7829105       30
+10             SCAD aic 1.7829105       30
+11             SCAD bic 1.7838085       29
+12            SCAD ebic 0.5867814        0
+13              MCP gcv 0.7913375       32
+14              MCP aic 0.7913375       32
+15              MCP bic 0.7913375       32
+16             MCP ebic 0.5867814        0
+17      lasso cv.glmnet 0.5834701        1
+18 adap lasso cv.glmnet 0.6607414       41
+19       SCAD cv.ncvreg 0.4629169       21
+20        MCP cv.ncvreg 0.5867814        0
+
+
+
+SCAD ncvreg genes:
+
+MDGA2
+ZNF655
+MGC27348
+WDR70
+FLJ35220
+TRIM21
+GFPT1
+GLA
+CCDC54
+FVT1
+LDOC1L
+MRPL51
+TMEM136
+ABCA1
+CLEC4M
+NDST4
+PELI3
+WDR46
+PYY
+CBLN2
+PLXNA3
+
+
+
+
+Group analysis with K = 150
+
+         model   tune selected      MSPE
+1  Group Lasso autoCV        4 0.4377368
+2  Group Lasso    GCV       13 0.4175291
+3  Group Lasso    AIC       78 0.3849020
+4  Group Lasso    BIC        0 0.5867814
+5  Group Lasso   EBIC        0 0.5867814
+6   Group SCAD autoCV        4 0.4425795
+7   Group SCAD    GCV       60 2.4094071
+8   Group SCAD    AIC       60 2.4094071
+9   Group SCAD    BIC       60 2.4094071
+10  Group SCAD   EBIC        0 0.5867814
+11   Group MCP autoCV        0 0.5867814
+12   Group MCP    GCV       37 1.1279177
+13   Group MCP    AIC       58 2.4970773
+14   Group MCP    BIC       58 2.4970773
+15   Group MCP   EBIC        0 0.5867814
+
+
+
+The best model is Group Lasso with AIC. 
+
+14 
+COQ5
+AKAP10
+USP7
+ZNF287
+
+20
+CRISP3
+CRISP2
+
+23
+TSHZ1
+ZNF573
+DCP1A
+HIPK3
+FVT1
+
+24
+HS3ST2
+VAT1
+TMED10
+
+25
+RND1
+LRRC31
+TOX3
+CST4
+
+34
+BFAR
+MGC16824
+THUMPD1
+DEXI
+
+39
+MDGA2
+SLCO1B1
+SLCO1B3
+LIX1
+CREG2
+GABRG2
+
+56
+SRMS
+SPINK5L3
+F9
+NDST4
+OR5A2
+
+59
+BCR
+ADORA2A
+FLJ42953
+
+73
+DDX46
+MTRR
+HMGCR
+PGGT1B
+GFM2
+
+74
+HIRA
+ACN9
+AEBP2
+TNFRSF25
+DNAH17
+
+82
+GLA
+MUC7
+MTMR11
+TTTY9A
+
+87
+ISCA2
+TRIP4
+EEF1A2
+`ARPP-19`
+SNAPC5
+
+105
+CCDC115
+ZNF655
+CNOT8
+CCNG1
+CHID1
+
+122
+KRT33B
+C18orf22
+ATP9B
+LOC255374
+
+136
+ZNF323
+SAP130
+C1orf157
+SFTPD
+
+140
+EDIL3
+FGFR2
+
+141
+C14orf133
+RABGAP1
+MUS81
+TJAP1
+
+145
+GALNTL1
+KCNQ1
+ABCD4
+RNF141
+
+full list of genes.
+COQ5
+AKAP10
+USP7
+ZNF287
+CRISP3
+CRISP2
+TSHZ1
+ZNF573
+DCP1A
+HIPK3
+FVT1
+HS3ST2
+VAT1
+TMED10
+RND1
+LRRC31
+TOX3
+CST4
+BFAR
+MGC16824
+THUMPD1
+DEXI
+MDGA2
+SLCO1B1
+SLCO1B3
+LIX1
+CREG2
+GABRG2
+SRMS
+SPINK5L3
+F9
+NDST4
+OR5A2
+BCR
+ADORA2A
+FLJ42953
+DDX46
+MTRR
+HMGCR
+PGGT1B
+GFM2
+HIRA
+ACN9
+AEBP2
+TNFRSF25
+DNAH17
+GLA
+MUC7
+MTMR11
+TTTY9A
+ISCA2
+TRIP4
+EEF1A2
+`ARPP-19`
+SNAPC5
+CCDC115
+ZNF655
+CNOT8
+CCNG1
+CHID1
+KRT33B
+C18orf22
+ATP9B
+LOC255374
+ZNF323
+SAP130
+C1orf157
+SFTPD
+EDIL3
+FGFR2
+C14orf133
+RABGAP1
+MUS81
+TJAP1
+GALNTL1
+KCNQ1
+ABCD4
+RNF141
+
+index
+14
+14
+14
+14
+20
+20
+23
+23
+23
+23
+23
+24
+24
+24
+25
+25
+25
+25
+34
+34
+34
+34
+39
+39
+39
+39
+39
+39
+56
+56
+56
+56
+56
+59
+59
+59
+73
+73
+73
+73
+73
+74
+74
+74
+74
+74
+82
+82
+82
+82
+87
+87
+87
+87
+87
+105
+105
+105
+105
+105
+122
+122
+122
+122
+136
+136
+136
+136
+140
+140
+141
+141
+141
+141
+145
+145
+145
+145
